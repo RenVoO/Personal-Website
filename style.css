@@ -1,0 +1,472 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #ddd;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #711DB0;
+    transition: width 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #711DB0;
+    transition-duration: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a.active {
+    color: #711DB0;
+}
+
+.navbar ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #711DB0;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-name {
+    color: #711DB0;
+}
+
+.home-bg{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.Introduce p{
+    font-family: verdana;
+    font-size: 25px;
+    color: whitesmoke;
+    position: absolute;
+    font-weight: bolder;
+    top: 67%;
+    left: 42.5%;
+}
+
+.Introduce h1 {
+    font-family: Arial;
+    font-size: 30px;
+    color: whitesmoke;
+    position: absolute;
+    font-weight: bolder;
+    top: 73%;
+    left: 34.8%;
+}
+
+.Line{
+    background-color: lightblue;
+    position: absolute;
+    top: 63%;
+    left: 34.5%;
+    border-radius: 10px;
+    border: 3px solid lightcyan;
+    width: 600px;
+    padding: 10px;
+}
+
+.hero{
+    width: 25%;
+    border-radius: 100%;
+    position: absolute;
+    top: 10%;
+    left: 37.3%;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+.instagram{
+    position: absolute;
+    left: 43.5%;
+    top: 80.1%;
+}
+
+.facebook{
+    position: absolute;
+    left: 48.5%;
+    top: 80.1%;
+}
+
+.whatsaap{
+    position: absolute;
+    left: 53.5%;
+    top: 80.1%;
+}
+
+.about-box{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.introduce{
+    font-family: verdana;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;  
+}
+
+.Profile{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Verdana;
+    color: #1D24CA;
+    position: absolute;
+    top: 138.5%;
+    left: 37%;
+    width: 24%;
+}
+
+.Inform{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana;
+    color: Black;
+    position: absolute;
+    top: 145.5%;
+    left: 37%;
+    width: 20.2%;
+}
+
+.mission{
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    color: black;
+    position: absolute;
+    top: 149.7%;
+    left: 37%;
+    width: 35%;
+}
+
+.pict{
+    position: absolute;
+    top: 130%;
+    left: .3%; 
+}
+
+.btn-cv{
+    color: #fff;
+    font-size: 18px;
+    width: auto;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding: 16px 50px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: #1E0342;
+    border: 2px solid #1E0342;
+    position: absolute;
+    top: 163%;
+    left: 36.5%;
+}
+
+.btn-cv:hover{
+    background: transparent;
+    border-color: #1E0342;
+    color: black;
+}
+
+.btn-contact{
+    color: black;
+    font-size: 18px;
+    width: auto;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding: 16px 50px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: transparent;
+    border: 2px solid #1E0342;
+    position: absolute;
+    top: 163%;
+    left: 49.5%;
+}
+
+.btn-contact:hover{
+    background: #1E0342;
+    border-color: #1E0342;
+    color: white;
+}
+
+
+.skills-box {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+   background-color: #3B3486;
+}
+
+.skills-box h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+.skills-box h1 span {
+    font-size: 45px;
+    color: yellow;
+}
+
+.skills-area {
+    margin: 8% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skills-card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.255);
+    width: 16%;
+    height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    transition: 0.5s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-10px);
+    color: yellow;
+}
+
+.skills-icon {
+    font-size: 20px;
+}
+
+.skills-desc h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.skills-desc p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.project{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    color: #1B262C;
+    text-align: center;
+}
+
+.box-project h1{
+    margin-top: 290px;
+    color: #1B262C;
+    font-family: Arial;
+    font-size: 45px;
+}
+
+.UI{
+    border-radius: 20px;
+    position: absolute;
+    left: 5%;
+    margin-top: 50px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.UI:hover{
+    -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+    
+}
+
+.movie{
+    border-radius: 20px;
+    position: absolute;
+    left: 35%;
+    margin-top: 50px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.movie:hover{
+    -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg); 
+}
+
+.travel{
+    border-radius: 20px;
+    position: absolute;
+    left: 66%;
+    margin-top: 50px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.travel:hover{
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+     -ms-transform: rotate(-10deg);
+         transform: rotate(-10deg); 
+}
+
+.footer {
+    width: 100%;
+    height: 39vh;
+    padding: 0;
+    background-color: #1B262C;
+    color: white;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.footer-container {
+    padding-top: 20px;
+}
+
+.box p .fa-phone,
+.box p .fa-envelope {
+    margin-right: 5px;
+    color: #FFA732;
+}
+
+.box .sm {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #711DB0;
+}
+
+.box-text p{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.box .sm a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    color: #711DB0;
+    background-color: white;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+.contact{
+    position: absolute;
+    left: 41.5%;
+    margin-top: 95px;
+}
+
+.footer .box .sm a:hover {
+    background-color: transparent;
+    color: #FFA732;
+}
+
+.box .sm a:last-child {
+    margin-right: 0;
+}
+
+.credit {
+    padding: 10px 0;
+    border-top: 1px solid #fff3;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    margin-top: 90px;
+    font-size: 10;
+    font-weight: 500;
+}
+
+
